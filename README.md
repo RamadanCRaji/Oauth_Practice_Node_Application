@@ -35,19 +35,18 @@ cd your-repo-name
 ### Configuration ⚙️
 
 1. Create .env file in /config folder:
-   - PORT=3000
-   - COOKIE_KEY=your-secret-key
-   - DB_STRING=mongodb://localhost:27017/auth-demo
-   - GOOGLE_CLIENT_ID=your-client-id
-   - GOOGLE_CLIENT_SECRET=your-client-secret
+   -  PORT=3000
+   -  COOKIE_KEY=your-secret-key
+   -  DB_STRING=mongodb://localhost:27017/auth-demo
+   -  GOOGLE_CLIENT_ID=your-client-id
+   -  GOOGLE_CLIENT_SECRET=your-client-secret
 2. -Google OAuth Setup:
-   - Create project at Google Cloud Console
-   - Enable Google+ API
-   - Add redirect URI: http://localhost:3000/auth/google/redirect
+   -  Create project at Google Cloud Console
+   -  Enable Google+ API
+   -  Add redirect URI: http://localhost:3000/auth/google/redirect
 
 ### Project Setup
 
-/
 ├── config/
 │ ├── database.js # MongoDB connection
 │ ├── passport-setup.js # Passport configuration
@@ -76,13 +75,13 @@ cd your-repo-name
 #### **Core Enhancements**
 
 -  [ ] **MongoDB Session Persistence**  
-       Implement `connect-mongo` for robust session storage and improved scalability
+        Implement `connect-mongo` for robust session storage and improved scalability
 
 -  [ ] **Comprehensive Error Handling**  
-       Add try-catch blocks with proper error propagation and custom error pages
+        Add try-catch blocks with proper error propagation and custom error pages
 
 -  [ ] **Local Authentication Strategy**  
-       Create username/password auth using `passport-local` with bcrypt hashing
+        Create username/password auth using `passport-local` with bcrypt hashing
 
 #### **User Experience**
 
